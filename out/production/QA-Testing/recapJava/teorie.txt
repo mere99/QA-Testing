@@ -1,0 +1,48 @@
+1) OOP în Java
+
+Encapsulation (Încapsulare): Nu lăsăm pe oricine să umble la "mațele" obiectului.
+Câmpuri private: Protejăm datele.
+Invariants: Reguli care trebuie să fie mereu adevărate (ex: vârsta nu poate fi negativă).
+Validare la intrare: Verificăm datele în setteri sau constructori.
+Vizibilitate default: Dacă nu pui public/private, e vizibil doar în același pachet (package-private).
+
+Abstraction (Abstracție): Ascundem detaliile complexe.
+Interfețe: Un contract ("Ce știe să facă obiectul?"). Folosește-le când vrei ca mai multe clase total diferite să facă același lucru.
+Clase abstracte: O bază parțială ("Ce este obiectul?"). Folosește-le când vrei să oferi și cod gata scris (metode implementate) subclaselor.
+
+Inheritance vs Composition:
+Inheritance (Moștenire): Relație de tip "IS-A" (Câinele este un Animal). Poate deveni rigidă.
+Composition (Compoziție): Relație de tip "HAS-A" (Mașina are un Motor). Preferăm compoziția pentru că este mai flexibilă; poți schimba "motorul" la runtime fără să strici ierarhia claselor.
+
+Polymorphism & Dynamic Dispatch: Abilitatea unui obiect de a lua mai multe forme. Programarea pe interfețe înseamnă să scrii List lista = new ArrayList(). La execuție, Java decide singur ce metodă să apeleze (asta e dynamic dispatch).
+
+Immutability: Obiecte care nu se schimbă după creare (ca un String). Folosești final pentru câmpuri și nu oferi setteri. Sunt sigure pentru multi-threading și mai puțin predispuse la bug-uri.
+
+Equals/HashCode/ToString:
+equals(): Verifică dacă două obiecte sunt identice ca logică (nu ca adresă de memorie).
+hashCode(): Dacă două obiecte sunt egale conform equals(), ele trebuie să aibă același hashcode. E vital pentru HashMap.
+
+---
+
+2) Tipuri și Generics
+
+Generics (<T>): Permit refolosirea codului pentru diferite tipuri de date, oferind siguranță la compilare (nu mai ai nevoie de cast-uri riscante).
+? extends T: (Upper Bound) Acceptă T sau orice subclasă a lui T. Folosit pentru citire.
+? super T: (Lower Bound) Acceptă T sau orice părinte al lui T. Folosit pentru scriere.
+
+Collections Framework:
+List: Ordinea contează, permite duplicate (ArrayList e rapid la citire, LinkedList la inserări în interior).
+Set: Fără duplicate (HashSet e rapid, TreeSet le ține sortate).
+Map: Perechi Cheie-Valoare (HashMap e standardul, TreeMap sortează cheile).
+
+---
+
+3) Excepții
+
+Checked vs Unchecked:
+Checked (moștenesc Exception): Ești obligat să le tratezi (try-catch) sau să le dai mai departe (throws). Se folosesc pentru erori externe (rețea, fișiere) pe care programul ar putea să le recupereze.
+Unchecked (moștenesc RuntimeException): Nu ești obligat să le declari. Apar de obicei din cauza erorilor de logică ale programatorului (ex: NullPointerException, IndexOutOfBounds).
+
+Propagare vs Tratare:
+Tratezi (Catch): Acolo unde poți face ceva util (ex: ceri utilizatorului să introducă din nou datele).
+Propagi (Throws): Atunci când metoda curentă nu știe cum să repare problema și lasă metoda apelantă să decidă.
