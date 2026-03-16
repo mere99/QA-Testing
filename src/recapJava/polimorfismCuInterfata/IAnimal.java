@@ -1,4 +1,4 @@
-package recapJava.polimorfism;
+package recapJava.polimorfismCuInterfata;
 
 public interface IAnimal {
     String sunet();

@@ -1,4 +1,4 @@
-package recapJava.polimorfism;
+package recapJava.polimorfismCuInterfata;
 
 public class Vaca implements IAnimal{
 private double cantitateLapte;

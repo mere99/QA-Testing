@@ -1,4 +1,4 @@
-package recapJava.polimorfism;
+package recapJava.polimorfismCuInterfata;
 
 public class Pisica implements IAnimal{
     private String culoare;

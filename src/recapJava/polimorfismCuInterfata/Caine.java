@@ -1,4 +1,4 @@
-package recapJava.polimorfism;
+package recapJava.polimorfismCuInterfata;
 
 public class Caine implements IAnimal{
 private String rasa;
