@@ -19,6 +19,7 @@ Cele 5 Reguli pentru o clasă Imuabilă:
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
 public class RetetaMedicala {
     private final String numePacient;
@@ -44,6 +45,29 @@ public class RetetaMedicala {
     public List<String> getMedicamente() {
         //returnam o lista nemodificabila
         return Collections.unmodifiableList(medicamente);
+    }
+
+    @Override
+    public String toString() {
+        return "RetetaMedicala{" +
+                "numePacient='" + numePacient + '\'' +
+                ", medicamente=" + medicamente +
+                '}';
+    }
+
+    /**
+     * Contractul equals() și hashCode():
+     * Dacă două obiecte sunt egale conform equals(), ele TREBUIE să aibă același hashCode()
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof RetetaMedicala that)) return false;
+        return Objects.equals(numePacient, that.numePacient) && Objects.equals(medicamente, that.medicamente);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(numePacient, medicamente);
     }
 }
 
