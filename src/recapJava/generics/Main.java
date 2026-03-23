@@ -23,7 +23,5 @@ public class Main {
         System.out.println("am acutalizat lista de medicamente adaugand un antibiotic: ");
         TestGenerics.afiseazaStoc(listaGenerala);
 
-
-
     }
 }
