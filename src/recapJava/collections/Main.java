@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
 
         Magazin magazin = new Magazin();
-
         magazin.adaugaProdus(new Produs("Retinol Serum", 89.99, "skincare"));
         magazin.adaugaProdus(new Produs("Vitamin C Serum", 74.50, "skincare"));
         magazin.adaugaProdus(new Produs("Mascara Volume", 45.00, "makeup"));
@@ -14,19 +13,22 @@ public class Main {
         magazin.adaugaProdus(new Produs("Retinol Serum", 89.99, "skincare")); // duplicat in lista
 
         System.out.println();
-        magazin.afiseazaStoc();         // ArrayList - apare si duplicatul
+        magazin.afiseazaStoc();
 
         System.out.println();
-        magazin.afiseazaCategorii();    // HashSet - doar 3 categorii unice, fara duplicate
+        magazin.afiseazaCatalog();
 
         System.out.println();
-        magazin.afiseazaCatalogSortat(); // TreeMap - sortat alfabetic
+        magazin.afiseazaCatalogSortat();
 
         System.out.println();
-        Produs gasit = magazin.cautaDupaNume("Mascara Volume"); // HashMap - cautare rapida
-        System.out.println("Produs gasit: " + gasit);
+        magazin.afiseazaCategorii();
 
-        System.out.println();
-        magazin.afiseazaProdusedinCategorie("skincare");
+        Produs gasit = magazin.cautaDupaNume("Mascara Volume");
+        System.out.println("Produs gasit: "+ gasit);
+
+
+
+
     }
 }
