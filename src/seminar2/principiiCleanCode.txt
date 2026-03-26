@@ -1,0 +1,43 @@
+Principiile Clean Code:
+
+De ce conteaza
+
+90% din timp programatorii citesc cod, nu il scriu. Codul trebuie sa fie usor de citit, inteles si modificat de oricine, inclusiv de tine peste 3 luni.
+
+Principii principale
+
+DRY - Don't Repeat Yourself. Daca dai copy-paste la cod sau scrii doua metode care fac acelasi lucru, ceva e gresit.
+
+KISS - Keep It Simple and Stupid. O metoda face un singur lucru, simplu. Codul simplu e mai flexibil si mai usor de extins.
+
+YAGNI - You Ain't Gonna Need It. Nu scrie cod pentru functionalitati care nu sunt necesare inca. Poate nu vor fi necesare niciodata.
+
+SOLID - cinci principii pentru design bun al claselor: o clasa are o singura responsabilitate, e deschisa pentru extensie dar inchisa pentru modificare, subclasele pot inlocui clasa parinte fara sa strice nimic, interfetele sa fie specifice nu generale, depinde de abstractii nu de implementari concrete.
+
+---
+
+Reguli practice
+
+Nume clare pentru clase, metode si variabile - un nume bun raspunde la "de ce exista, ce face, cum e folosit".
+
+Metode scurte - maxim 20 de linii, maxim 2-3 parametri, maxim 3 niveluri de imbricare.
+
+Comentarii minime - codul bine scris e auto-explicativ. Daca simti nevoia unui comentariu sa explice ce face o metoda, probabil metoda trebuie impartita in doua.
+
+Nu comenta cod neutilizat - devine zombie. Foloseste git pentru istoric.
+
+---
+
+Doua reguli bonus de retinut
+
+Broken Window Principle - codul prost atrage mai mult cod prost. Un fisier dezordonat va fi umplut cu si mai mult cod dezordonat de colegii tai.
+
+Boy Scout Rule - lasa codul putin mai curat decat l-ai gasit.
+====================================
+extends      -> mostenesti o clasa, doar una singura
+implements   -> implementezi o interfata, poti mai multe
+super()      -> apelezi constructorul clasei parinte
+super.metoda -> apelezi o metoda din clasa parinte
+@Override    -> marchezi ca suprascrii o metoda
+abstract     -> clasa sau metoda care trebuie extinsa/implementata
+final        -> clasa sau metoda care nu poate fi extinsa/suprascriusa
