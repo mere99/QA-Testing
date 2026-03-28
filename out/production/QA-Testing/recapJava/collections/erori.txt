@@ -1,0 +1,14 @@
+ =====Exceptii=====
+ UNCHECKED - mosteneste RuntimeException:
+ Nu esti obligat sa o declari sau sa o prinzi
+ Apare din greseli de programare
+
+  CHECKED - mosteneste Exception (nu RuntimeException)
+  Compilatorul te obliga sa o tratezi sau sa o propagi
+  Apare din situatii externe, imprevizibile
+
+Gresala de programare (null, index invalid, argument gresit)  -> Unchecked
+Situatie externa (fisier lipsa, retea cazuta, baza de date)   -> Checked
+
+Propagi cu throws
+Tratezi cu try catch
