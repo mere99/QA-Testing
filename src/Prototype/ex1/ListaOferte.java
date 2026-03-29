@@ -1,10 +1,10 @@
-package Prototype;
+package Prototype.ex1;
 
 import java.util.ArrayList;
 import java.util.List;
 
 //CONCRETE PROTOTYPE
-public class ListaOferte implements IListaOferte{
+public class ListaOferte implements IListaOferte {
 
     private List<String> oferte;
     //constructor COSTISITOR - simulam citirea din BD

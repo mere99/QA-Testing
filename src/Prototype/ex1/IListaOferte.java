@@ -1,4 +1,4 @@
-package Prototype;
+package Prototype.ex1;
 /*
 * cerinta:
 * Agenția AgeTur dorește să trimită lista de oferte existentă în baza de date tuturor clienților.
