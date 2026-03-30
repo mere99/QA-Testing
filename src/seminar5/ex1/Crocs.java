@@ -1,9 +1,9 @@
-package seminar5;
+package seminar5.ex1;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Crocs implements ICrocs{
+public class Crocs implements ICrocs {
 private int marime;
 private String culoare;
 private String accesorii;
