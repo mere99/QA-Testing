@@ -1,6 +1,4 @@
-package ModeleTest1;
-
-import java.util.Set;
+package ModeleTest1.sub2;
 
 public interface IJucator {
     IJucator clone();

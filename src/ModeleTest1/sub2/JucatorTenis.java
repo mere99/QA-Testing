@@ -1,9 +1,9 @@
-package ModeleTest1;
+package ModeleTest1.sub2;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class JucatorTenis extends Jucator{
+public class JucatorTenis extends Jucator {
 
     private static Set<String> MEDICAMENTE_TENIS = new HashSet<>(Set.of("ServeX", "StaminaPlus"));
     private static Set<String> ANTRENAMENTE_TENIS = new HashSet<>(Set.of("forehand", "cardio", "coordonare"));
