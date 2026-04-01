@@ -1,8 +1,5 @@
 package Builder.cupcake;
 
-import seminar2si3.taxare.ITaxare;
-import seminar2si3.taxare.TaxareNormala;
-import seminar2si3.taxare.TaxarePreferentiala;
 
 import java.util.HashMap;
 import java.util.Map;

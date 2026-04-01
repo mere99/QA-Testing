@@ -29,7 +29,7 @@ public class Exercitiu {
         this.denumire = denumire;
     }
 
-    public void setNrRepetitii(String nrRepetitii) {
+    public void setNrRepetitii(int nrRepetitii) {
         this.nrRepetitii = nrRepetitii;
     }
 }
