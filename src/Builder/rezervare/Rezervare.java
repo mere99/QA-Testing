@@ -1,4 +1,4 @@
-package Builder;
+package Builder.rezervare;
 
 public class Rezervare {
     private String hotel;
