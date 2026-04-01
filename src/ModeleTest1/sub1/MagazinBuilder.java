@@ -1,4 +1,4 @@
-package ModeleTest1;
+package ModeleTest1.sub1;
 
 import java.util.ArrayList;
 import java.util.List;

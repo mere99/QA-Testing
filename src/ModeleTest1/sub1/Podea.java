@@ -1,4 +1,4 @@
-package ModeleTest1;
+package ModeleTest1.sub1;
 
 public class Podea {
     private TipPodea tip;
