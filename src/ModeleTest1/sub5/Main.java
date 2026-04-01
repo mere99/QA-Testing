@@ -8,12 +8,19 @@ public class Main {
 
         //lily deschide comanda
         casa.deschideComanda(a1);
-        casa.adaugaProdus("cereale");
-        casa.adaugaProdus("bobite");
+        casa.adaugaProdus(a1,"cereale");
+        casa.adaugaProdus(a1,"bobite");
         casa.showInfoComanda();
+//=====diverse exceptii====
+        //tom incearca sa adauge prod in comanda lui lily
+       // casa.adaugaProdus(a2,"eugenie");
 
-        //casa.deschideComanda(a1);
-        casa.inchideComanda(a2);
+        //tom incearca sa inchida comanda lui lily
+       // casa.inchideComanda(a2);
+
+        //tom incearca sa deschida o comanda in timp ce cea a lui lily nu e inchisa
+        casa.deschideComanda(a2);
+        //casa.inchideComanda(a1);
         casa.showInfoComanda();
 
 

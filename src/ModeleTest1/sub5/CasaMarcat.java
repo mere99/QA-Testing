@@ -14,10 +14,13 @@ public class CasaMarcat implements AbstractCasaMarcat {
 
     private AbstractAngajat angCurent;
     private List<String> produse;
-    private StareComanda stareComanda;
+    private StareComanda stareComanda=StareComanda.INCHISA;
 
     @Override
     public void deschideComanda(AbstractAngajat angajat) {
+        if(!stareComanda.equals(StareComanda.INCHISA)){
+            throw new IllegalArgumentException("NU POTI DESCHIDE O COMANDA PT CA ANGAJATUL "+angCurent.getNume()+" are deja una deschisa!");
+        }
         System.out.println("angajatul "+ angajat.getNume() +" a deschis comanda ");
         this.stareComanda=StareComanda.DESCHISA;
         this.angCurent=angajat;
@@ -26,6 +29,7 @@ public class CasaMarcat implements AbstractCasaMarcat {
 
     @Override
     public void inchideComanda(AbstractAngajat angajat) {
+        verificaAngajat(angajat);
         System.out.println("angajatul "+ angajat.getNume() +" a inchis comanda cu produsele: "+produse);
         this.stareComanda=StareComanda.INCHISA;
         this.angCurent=null;
@@ -33,7 +37,8 @@ public class CasaMarcat implements AbstractCasaMarcat {
     }
 
     @Override
-    public void adaugaProdus(String denumireProdus) {
+    public void adaugaProdus(AbstractAngajat a, String denumireProdus) {
+        verificaAngajat(a);
       this.produse.add(denumireProdus);
     }
 
@@ -52,7 +57,7 @@ public class CasaMarcat implements AbstractCasaMarcat {
 
         if(!a.getNume().equalsIgnoreCase(angCurent.getNume())){
             throw new IllegalArgumentException(
-                    a.getNume() + " nu poate modifica comanda lui " + a.getNume() + "!");
+                    a.getNume() + " nu poate modifica comanda lui " + angCurent.getNume() + "!");
         }
 
 
