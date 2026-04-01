@@ -1,6 +1,6 @@
-package ModeleTest1;
+package ModeleTest1.cafeneaFactoryProto;
 
-public class Cafea extends Bautura{
+public class Cafea extends Bautura {
     private boolean areLapte;
 
 

@@ -1,6 +1,6 @@
-package ModeleTest1;
+package ModeleTest1.cafeneaFactoryProto;
 
-public class CiocolataCalda extends Bautura{
+public class CiocolataCalda extends Bautura {
 
     public CiocolataCalda(String nume, double volum, double pret) {
         super(nume, volum, pret);

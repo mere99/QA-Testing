@@ -1,4 +1,4 @@
-package ModeleTest1;
+package ModeleTest1.cafeneaFactoryProto;
 
 public class FactoryBautura {
     public static Bautura createBautura(TipBautura t, String nume, double volum, double pret){

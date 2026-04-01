@@ -1,8 +1,8 @@
-package ModeleTest1;
+package ModeleTest1.cafeneaFactoryProto;
 
 public class Main {
     public static void main(String[] args) {
-        Cafea b1 = (Cafea)FactoryBautura.createBautura(TipBautura.CAFEA, "latteMachiatto",240, 23);
+        Cafea b1 = (Cafea) FactoryBautura.createBautura(TipBautura.CAFEA, "latteMachiatto",240, 23);
         Ceai b2 = (Ceai)FactoryBautura.createBautura(TipBautura.CEAI, "earl grey", 210, 15);
 
         b1.setAreLapte(true);

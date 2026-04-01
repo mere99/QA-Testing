@@ -1,6 +1,6 @@
-package ModeleTest1;
+package ModeleTest1.cafeneaFactoryProto;
 
-public class Ceai extends Bautura{
+public class Ceai extends Bautura {
     private String planta;
 
     public Ceai(String nume, double volum, double pret, String planta) {

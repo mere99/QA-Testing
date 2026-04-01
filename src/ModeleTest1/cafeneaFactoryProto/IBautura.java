@@ -1,4 +1,4 @@
-package ModeleTest1;
+package ModeleTest1.cafeneaFactoryProto;
 
 public interface IBautura {
     void preparare();

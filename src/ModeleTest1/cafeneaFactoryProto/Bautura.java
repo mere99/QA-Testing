@@ -1,6 +1,6 @@
-package ModeleTest1;
+package ModeleTest1.cafeneaFactoryProto;
 
-public abstract class Bautura implements IBautura{
+public abstract class Bautura implements IBautura {
     protected String nume;
     protected double volum;
     protected double pret;
