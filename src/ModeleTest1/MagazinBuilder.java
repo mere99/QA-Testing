@@ -1,5 +1,6 @@
 package ModeleTest1;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MagazinBuilder {
@@ -8,7 +9,7 @@ public class MagazinBuilder {
     private final int nrIntrari;//standard e 1
     //optionale:
     private Podea podea = new Podea(TipPodea.STANDARD, 1.9);
-    private List<String> materialeDecoratiuni= null;
+    private List<String> materialeDecoratiuni= new ArrayList<>();
 
     public MagazinBuilder(String denumire, double supraf, int nrIntrari) {
         this.denumire = denumire;
@@ -33,15 +34,19 @@ public class MagazinBuilder {
     }
 
     public Magazin build(){
-        double x = supraf/100;
-        if(nrIntrari<x+1){
-            throw new IllegalArgumentException("NU este permis sa aveti <1 intrare / 100mp !!!");
+        if (nrIntrari * 100 < supraf) {
+            throw new IllegalArgumentException(
+                    "Numar insuficient de intrari! Pentru " + supraf +
+                            " mp sunt necesare minim 1 intrare per 100mp."
+            );
+        }
+        int flag = 0;
+        if(materialeDecoratiuni!=null){
+            for(String m : materialeDecoratiuni){
+                if(m.equalsIgnoreCase("sticla")){ flag =1; }
+            }
         }
 
-        int flag = 0;
-        for(String m : materialeDecoratiuni){
-            if(m.equalsIgnoreCase("sticla")){ flag =1; }
-        }
         if(podea.getDuritate()<2 && flag == 1){
             throw new IllegalArgumentException("NU este permis sa aveti duritatea podelei < 2 daca aveti decoratiuni de STICLA !!");
         }

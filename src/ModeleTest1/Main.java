@@ -11,7 +11,7 @@ public class Main {
                 .build();
         System.out.println(m2);
 
-        //aici ar trb sa arunce exceptie:
+     //   aici ar trb sa arunce exceptie:
         Magazin m3 = new MagazinBuilder("girly shit", 190, 1)
                 .build();
 
