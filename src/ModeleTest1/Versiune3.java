@@ -19,9 +19,8 @@ public class Versiune3 extends AutonomousDriving{
 
     //constr copiere
     public Versiune3(Versiune3 v) throws InterruptedException {
-        super(v.version);
+        super(v);
         this.invatareAutomata=v.invatareAutomata;
-        this.decisionRules=new ArrayList<>(v.decisionRules);
     }
 
     @Override

@@ -21,9 +21,8 @@ public class Versiune2 extends AutonomousDriving{
 
     //constr de copiere:
     public Versiune2(Versiune2 v) throws InterruptedException {
-        super(v.version);
+        super(v);
         this.vitezaZbor=v.vitezaZbor;
-        this.decisionRules=new ArrayList<>(v.decisionRules);
     }
     @Override
     void applyRule(int index, String context) {

@@ -20,9 +20,8 @@ public class Versiune1 extends AutonomousDriving{
 
     //constr de copiere pt clone()
     public Versiune1(Versiune1 v) throws InterruptedException {
-        super(v.version);
+        super(v);
         this.evitareObstacole=v.evitareObstacole;
-        this.decisionRules=new ArrayList<>(v.decisionRules);
     }
 
 
