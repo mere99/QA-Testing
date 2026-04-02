@@ -1,4 +1,4 @@
-package ModeleTest1;
+package ModeleTest1.AutonomousDriving;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
@@ -23,7 +23,7 @@ conn.connectUser(u2.getUserId());
 conn.isUserConnected("201");
 conn.getDedicatedChannel("199");
 
-conn.showConnection();
+conn.showConnections();
 
     }
 }

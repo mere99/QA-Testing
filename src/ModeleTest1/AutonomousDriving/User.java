@@ -1,4 +1,4 @@
-package ModeleTest1;
+package ModeleTest1.AutonomousDriving;
 
 public class User {
     protected String userId;

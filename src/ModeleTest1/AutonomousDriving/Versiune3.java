@@ -1,9 +1,9 @@
-package ModeleTest1;
+package ModeleTest1.AutonomousDriving;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Versiune3 extends AutonomousDriving{
+public class Versiune3 extends AutonomousDriving {
     private boolean invatareAutomata;
 
     //CONSTR LENT

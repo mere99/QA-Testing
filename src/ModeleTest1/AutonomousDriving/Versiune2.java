@@ -1,9 +1,9 @@
-package ModeleTest1;
+package ModeleTest1.AutonomousDriving;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Versiune2 extends AutonomousDriving{
+public class Versiune2 extends AutonomousDriving {
     private double vitezaZbor;
 
 

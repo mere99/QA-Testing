@@ -1,4 +1,4 @@
-package ModeleTest1;
+package ModeleTest1.AutonomousDriving;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -46,7 +46,7 @@ private DroneConnection(){};
         return mapa.get(userId);
     }
 
-    public void showConnection(){
+    public void showConnections(){
         System.out.println(mapa);
     }
 }
