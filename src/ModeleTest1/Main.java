@@ -13,7 +13,17 @@ public class Main {
    clona1.adDecisionRule("evita turturi");
    clona1.applyRule(12, "polul nord");
 
+User u1 =new User("199");
+User u2 = new User("200");
 
+DroneConnection conn = DroneConnection.getInstance();
+conn.connectUser(u1.getUserId());
+conn.connectUser(u2.getUserId());
+
+conn.isUserConnected("201");
+conn.getDedicatedChannel("199");
+
+conn.showConnection();
 
     }
 }
