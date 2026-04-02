@@ -1,4 +1,4 @@
-package ModeleTest1;
+package ModeleTest1.Drone;
 
 public class UrmarireInteligenta extends AbstractModule{
     private int maxSpeed;

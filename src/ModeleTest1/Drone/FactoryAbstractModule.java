@@ -1,4 +1,4 @@
-package ModeleTest1;
+package ModeleTest1.Drone;
 
 public class FactoryAbstractModule {
     public static AbstractModule createModule(TipModul t, String name, String description, float price){

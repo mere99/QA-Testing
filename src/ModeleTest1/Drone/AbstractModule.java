@@ -1,4 +1,4 @@
-package ModeleTest1;
+package ModeleTest1.Drone;
 
 public abstract class AbstractModule {
     protected String name;

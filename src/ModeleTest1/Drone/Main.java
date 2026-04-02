@@ -1,4 +1,4 @@
-package ModeleTest1;
+package ModeleTest1.Drone;
 
 public class Main {
     public static void main(String[] args){
