@@ -1,7 +1,7 @@
 package FactoryMethod;
 
 public class Mascara implements IMakeup{
-    private boolean isWaterproof;
+    protected boolean isWaterproof;
 
     public Mascara(boolean isWaterproof) {
         this.isWaterproof = isWaterproof;
