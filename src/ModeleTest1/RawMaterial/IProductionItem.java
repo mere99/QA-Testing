@@ -1,4 +1,4 @@
-package ModeleTest1;
+package ModeleTest1.RawMaterial;
 
 public interface IProductionItem {
     String getModelName();

@@ -1,4 +1,4 @@
-package ModeleTest1;
+package ModeleTest1.RawMaterial;
 
 public class Angajat {
 private int codAng;

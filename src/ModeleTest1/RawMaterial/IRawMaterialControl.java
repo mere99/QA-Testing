@@ -1,4 +1,4 @@
-package ModeleTest1;
+package ModeleTest1.RawMaterial;
 
 public interface IRawMaterialControl {
     void addRawMaterial(String codAngajat, float quantity) throws Exception;

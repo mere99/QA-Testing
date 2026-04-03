@@ -1,11 +1,11 @@
-package ModeleTest1;
+package ModeleTest1.RawMaterial;
 
 public class ProductionItem implements IProductionItem {
-    String modelName;
-    String serialCode;
-    String batchLabel;
-    String packagingType;
-    String tipMaterial;
+   private String modelName;
+   private String serialCode;
+   private String batchLabel;
+   private String packagingType;
+   private String tipMaterial;
 
 
 
