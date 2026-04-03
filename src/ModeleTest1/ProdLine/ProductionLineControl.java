@@ -1,6 +1,5 @@
-package ModeleTest1;
+package ModeleTest1.ProdLine;
 
-import java.util.Map;
 import java.util.Objects;
 
 //singleton

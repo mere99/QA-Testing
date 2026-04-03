@@ -1,9 +1,10 @@
-package ModeleTest1;
+package ModeleTest1.ProdLine;
 
-public interface IProductionItem {
+public interface
+IProductionItem {
+    public IProductionItem clone();
     String getModelName();
     String getSerialCode();
-    String getMaterialType();
     String getBatchLabel();
     String getPackagingType();
     void displayInfo();

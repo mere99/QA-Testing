@@ -1,4 +1,4 @@
-package ModeleTest1;
+package ModeleTest1.ProdLine;
 
 public interface IProductionLineControl {
     void startLine(String employeeId) throws Exception;

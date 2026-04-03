@@ -1,13 +1,13 @@
 package ModeleTest1;
 
 public class Angajat {
-private String idAngajat;
+private int codAng;
 
-    public Angajat(String idAngajat) {
-        this.idAngajat = idAngajat;
+    public Angajat(int codAng) {
+        this.codAng = codAng;
     }
 
-    public String getIdAngajat() {
-        return idAngajat;
+    public int getCodAng() {
+        return codAng;
     }
 }

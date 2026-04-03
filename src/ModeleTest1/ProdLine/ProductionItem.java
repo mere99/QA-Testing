@@ -1,22 +1,34 @@
-package ModeleTest1;
+package ModeleTest1.ProdLine;
 
-public class ProductionItem implements IProductionItem {
+public class ProductionItem implements IProductionItem{
     String modelName;
     String serialCode;
     String batchLabel;
     String packagingType;
-    String tipMaterial;
+
+    //copia trb sa poata fi personalizata -> setters
+    //constr lentr
 
 
-
-    public ProductionItem(String modelName, String serialCode, String batchLabel, String packagingType, String tipMaterial)  {
+    public ProductionItem(String modelName, String serialCode, String batchLabel, String packagingType) throws InterruptedException {
+        System.out.println("Start creating prod item...");
+        Thread.sleep(1000);
         this.modelName = modelName;
         this.serialCode = serialCode;
         this.batchLabel = batchLabel;
         this.packagingType = packagingType;
-        this.tipMaterial=tipMaterial;
     }
 
+    public ProductionItem(ProductionItem p){
+        this.modelName=p.modelName;
+        this.serialCode=p.serialCode;
+        this.batchLabel=p.batchLabel;
+        this.packagingType=p.packagingType;
+    }
+    @Override
+    public IProductionItem clone() {
+        return new ProductionItem(this);
+    }
 
     @Override
     public String getModelName() {
@@ -29,11 +41,6 @@ public class ProductionItem implements IProductionItem {
     }
 
     @Override
-    public String getMaterialType() {
-        return this.tipMaterial;
-    }
-
-    @Override
     public String getBatchLabel() {
         return this.batchLabel;
     }
@@ -43,6 +50,10 @@ public class ProductionItem implements IProductionItem {
         return this.packagingType;
     }
 
+    //personalizare ulterioara
+    public void setPackagingType(String packagingType) {
+        this.packagingType = packagingType;
+    }
 
     @Override
     public String toString() {
@@ -51,7 +62,6 @@ public class ProductionItem implements IProductionItem {
                 ", serialCode='" + serialCode + '\'' +
                 ", batchLabel='" + batchLabel + '\'' +
                 ", packagingType='" + packagingType + '\'' +
-                ", tipMaterial='" + tipMaterial + '\'' +
                 '}';
     }
 
